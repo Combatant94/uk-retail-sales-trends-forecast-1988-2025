@@ -16,7 +16,7 @@ This project began with a question that felt simple but turned out to be fascina
 Using official **ONS data**, I built a complete analysis pipeline with **Python**, **SQL**, and **Power BI**, ending with a forecast and interactive dashboard.
 
 
-
+--- 
 ### 🧠 Project Goal
 
 To understand long-term trends in UK retail, study the rise of online sales, and forecast future performance — while building a professional, end-to-end analytical workflow
@@ -24,6 +24,7 @@ To understand long-term trends in UK retail, study the rise of online sales, and
 ### Report preview
 ![Uk_retail_report_pdf_small](https://github.com/user-attachments/assets/d7f443ef-91c7-4a2e-8003-ad3f9a760665)
 
+---
 
 ### 📚 Data Source
 
@@ -44,7 +45,7 @@ To understand long-term trends in UK retail, study the rise of online sales, and
 
 * **Time Range:** January 1988 → August 2025
 * **Total Records:** 909 rows (reduced to 904 after cleaning)
-
+---
 ### Python Code preview
 ![Uk_retail_preview_code_small](https://github.com/user-attachments/assets/30650d1c-dc5e-40e3-ae38-2e826bf5201a)
 
@@ -63,10 +64,14 @@ To understand long-term trends in UK retail, study the rise of online sales, and
 * Added derived columns: `year`, `month`, moving averages (`*_ma12`), and YoY change
 
  <img width="833" height="439" alt="image" src="https://github.com/user-attachments/assets/a56808bb-3c81-4c10-a78b-ed8c1a1ccc5e" />
+ 
+ Before cleaning, I checked how missing values were distributed over time. Most gaps appeared in the early years (1988–1995), showing that missing data was structural — not random — mainly because newer retail categories like online sales were added later.
+This confirmed it was safe to forward-fill missing values without distorting long-term retail trends.
 
 
-✅ **Final Shape:** 904 rows × 6 key columns
-✅ **Period Covered:** Jan 1988 – Aug 2025
+ **Final Shape:** 904 rows × 6 key columns
+ 
+ **Period Covered:** Jan 1988 – Aug 2025
 
 ---
 
@@ -94,9 +99,13 @@ To understand long-term trends in UK retail, study the rise of online sales, and
 
 ---
 
-### 🖼️ Add These Visuals
+
 
 ![Power BI Retail Dashboard](https://github.com/user-attachments/assets/f8fbe39a-1782-4e32-969d-ef656847ed58)
+
+
+
+ Outliers begin around late 2016 — exactly when online retail started to surge. These spikes continue through 2025 and represent major real-world retail events, including Black Friday peaks, rapid post-2016 digital adoption, and volatility during the COVID-19 pandemic. They were retained because they reflect genuine market shifts, not data errors.
 
 
 * 📈 **Trend Plot:** <img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/9c907e43-1a48-4a0b-802b-453c3a45957e" />
@@ -118,7 +127,7 @@ To understand long-term trends in UK retail, study the rise of online sales, and
 
 * Performed two-sample t-test on `retail_all`
 * **t = –4.69**, **p < 0.001**
-  ✅ Reject null hypothesis — sales after 2010 are significantly higher.
+  Reject null hypothesis — sales after 2010 are significantly higher.
 
 This marks the start of the **digital transformation** in UK retail.
 
@@ -144,11 +153,11 @@ Used **Facebook Prophet** to forecast total and online sales for 2025–2027.
 <img width="989" height="610" alt="image" src="https://github.com/user-attachments/assets/623dd6d7-f510-4bb5-8110-e662b52271f7" />
 
 * 🔮 **Prophet Forecast Plot (actual vs predicted)**
-  *Caption:* “Prophet forecast (2025–2027) — sustained growth and recurring Q4 peaks.”
+Prophet forecast (2025–2027) — sustained growth and recurring Q4 peaks.
 <img width="886" height="590" alt="image" src="https://github.com/user-attachments/assets/fef651a7-607e-4b02-b31a-56b331953cd6" />
 
 * 📊 **Seasonality Plot**
-  *Caption:* “Clear quarterly cycles — Q4 consistently drives peak sales.”
+  Clear quarterly cycles — Q4 consistently drives peak sales.
 
 ---
 
@@ -163,12 +172,13 @@ Used **Facebook Prophet** to forecast total and online sales for 2025–2027.
 
 ---
 
-### 🖼️  Add These Visuals
+### PowerBI Dasboard and Preview
+<img width="1403" height="651" alt="Screenshot 2025-11-05 at 13 07 41" src="https://github.com/user-attachments/assets/7ef276c5-e389-4f24-8bd9-f7fcea7c5cdc" />
 <img width="970" height="541" alt="Screenshot 2025-11-05 at 12 30 16" src="https://github.com/user-attachments/assets/5f818f86-6010-4fdf-b796-1b7127994d4f" />
 
 * 💼 **Power BI KPI Cards or Summary Visuals**
   
-“Power BI dashboard displaying key retail KPIs — total growth, online share %, and forecasted values.”
+Power BI dashboard displaying key retail KPIs — total growth, online share %, and forecasted values.
 
 * 🎥 **Power BI Dashboard GIF**
   ![power_bi_preview_small](https://github.com/user-attachments/assets/6617e821-6409-4d09-9ccc-c6f9b3bf09ab)
@@ -186,20 +196,15 @@ Final report compiled in **Power BI** and exported to PDF:
 
 **SQL Integration:**
 
-* SQL view created in `UK_retail_sales.sql`
-* Used to feed Power BI directly from cleaned dataset (`uk_retail_sales_final.csv`)
+* SQL view created in `UK_retail_sales.sql`  Executed in SQL Server Management System Studio 2.0
+* Used to feed Power BI directly from cleaned dataset (`uk_retail_sales_cleaned.csv`)
 
----
-
-### 🖼️ Add These Visuals
-
-* 📄 **Report Screenshot (first page)**
-  *Caption:* “Excerpt from ‘UK Retail Sales Analysis 2025.pdf’ — summary insights and conclusions.”
 
 * 💾 **SQL Script Screenshot**
-  *Caption:* “SQL View creation script used to connect Power BI to cleaned dataset.”
 
----
+
+<img width="1512" height="767" alt="Screenshot 2025-11-05 at 12 57 48" src="https://github.com/user-attachments/assets/6016b5a9-338e-40cd-88e6-03edbdef7547" />
+ SQL View creation script (SQL Server Management System Studio 2.0) used to connect Power BI to cleaned dataset.
 
 ### 🧩 Tools & Libraries
 
@@ -225,8 +230,9 @@ uk-retail-sales-analysis-1988-2025/
 │   └── UK_Retail_Sales_Analysis.ipynb
 │
 ├── sql/UK_retail_sales.sql
+     uk_retail_sales_cleaned.csv
 ├── reports/UK Retail Sales Analysis 2025.pdf
-└── assets/        ← drag your screenshots & GIFs here
+└── assets/   
 ```
 
 ---
@@ -242,7 +248,7 @@ jupyter notebook notebooks/UK_Retail_Sales_Analysis.ipynb
 
 **To reproduce Power BI dashboard:**
 
-1. Import `uk_retail_sales_final.csv` into SQL.
+1. Import `uk_retail_sales_cleaned.csv` into SQL.
 2. Run `UK_retail_sales.sql` to create the view.
 3. Connect Power BI → SQL View → build dashboard.
 
@@ -261,37 +267,16 @@ jupyter notebook notebooks/UK_Retail_Sales_Analysis.ipynb
 ### 👤 About Me
 
 📍 London, UK
+
 🎓 MSc Data Science — Birkbeck, University of London
+
 🔗 [LinkedIn](https://www.linkedin.com/in/mohd-nafees-59863524b/)
+
 📧 [nafees.mohd.datascientist25@gmail.com](mailto:nafees.mohd.datascientist25@gmail.com)
+
 🗓️ November 2025
 
 ---
 
-### 🌍 Why This Project Matters
 
-This project represents a complete, real-world workflow —
-from messy Excel data to meaningful business insight.
 
-It blends technical analysis with communication — exactly what employers look for.
-
-⭐ If you find this useful, please star the repository — it helps my portfolio reach more people.
-
----
-
-### 🖼️ Add Final Visual
-
-* 🔧 **Workflow Image or GIF**
-  *Caption:* “Complete workflow — Python data cleaning → SQL modelling → Power BI dashboard → Report.”
-
----
-
-✅ Everything in this README is:
-
-* Factually verified from your notebooks and data
-* Human-written with natural tone and structure
-* Ready for GitHub — all you need is to drag in your visuals
-
----
-
-Would you like me to generate the `requirements.txt` (with only your actual notebook libraries: pandas, matplotlib, seaborn, prophet, scipy, etc.) next so you can complete the repo setup?
