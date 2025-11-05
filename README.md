@@ -148,7 +148,7 @@ Used **Facebook Prophet** to forecast total and online sales for 2025–2027.
 
 ---
 
-### 🖼️ Add These Visuals
+### Trend and Forecast
 
 <img width="989" height="610" alt="image" src="https://github.com/user-attachments/assets/623dd6d7-f510-4bb5-8110-e662b52271f7" />
 
