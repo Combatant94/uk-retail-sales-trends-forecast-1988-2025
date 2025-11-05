@@ -172,7 +172,8 @@ Prophet forecast (2025–2027) — sustained growth and recurring Q4 peaks.
 | Data updates needed            | Automate Power BI refresh with ONS API     |
 
 ---
-
+## 🚀 Live Dashboard
+🎥 Explore the Interactive Dashboard: (Coming soon – will be published on NovyPro shortly)
 ### PowerBI Dasboard and Preview
 <img width="1403" height="651" alt="Screenshot 2025-11-05 at 13 07 41" src="https://github.com/user-attachments/assets/7ef276c5-e389-4f24-8bd9-f7fcea7c5cdc" />
 <img width="970" height="541" alt="Screenshot 2025-11-05 at 12 30 16" src="https://github.com/user-attachments/assets/5f818f86-6010-4fdf-b796-1b7127994d4f" />
