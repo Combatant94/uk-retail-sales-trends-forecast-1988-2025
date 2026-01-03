@@ -18,7 +18,7 @@ Using official **ONS data**, I built a complete analysis pipeline with **Python*
 --- 
 ### 🧠 Project Goal
 
-To understand long-term trends in UK retail, study the rise of online sales, and forecast future performance — while building a professional, end-to-end analytical workflow
+To understand long-term trends in UK retail, study the rise of online sales, and forecast future performance — while building a professional, end-to-end analytical workflow.
 
 ### Report preview
 ![Uk_retail_report_pdf_small](https://github.com/user-attachments/assets/d7f443ef-91c7-4a2e-8003-ad3f9a760665)
