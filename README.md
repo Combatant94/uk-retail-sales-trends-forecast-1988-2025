@@ -1,6 +1,6 @@
 
 ## 🇬🇧 UK Retail Sales Analysis (1988–2025)
-<img width="747" height="420" alt="image" src="https://github.com/user-attachments/assets/7f656eb6-c3c3-454c-adfd-8a7397ea819b" />
+<img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/991250a3-de43-4539-9047-e544f6bbd758" />
 
 Hi, I’m **Mohd Nafees** — MSc Data Science graduate from **Birkbeck, University of London**.
 This project began with a question that felt simple but turned out to be fascinating:
