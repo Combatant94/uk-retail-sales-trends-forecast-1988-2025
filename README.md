@@ -13,8 +13,7 @@ This project began with a question that felt simple but turned out to be fascina
 
 Using official **ONS data**, I built a complete analysis pipeline with **Python**, **SQL**, and **Power BI**, ending with a forecast and interactive dashboard.
 
-<img width="1078" height="606" alt="Screenshot 2025-11-05 at 13 27 38" src="https://github.com/user-attachments/assets/28f14a55-291d-4bdd-9736-fcb6dc382aef" />
-
+![power_bi_preview_small](https://github.com/user-attachments/assets/6617e821-6409-4d09-9ccc-c6f9b3bf09ab)
 --- 
 ### 🧠 Project Goal
 
